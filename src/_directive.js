@@ -59,7 +59,7 @@ function onBind (el, { modifiers = {}, value = {} }) {
     settings.speed = value.speed || 0.02
     settings.limit = {
       min: 0,
-      max: 100
+      max: 80
     }
   }
 

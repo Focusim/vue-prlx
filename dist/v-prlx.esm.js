@@ -32,7 +32,7 @@ function onBind(el, _ref) {
     settings.speed = value.speed || 0.02;
     settings.limit = {
       min: 0,
-      max: 100
+      max: 80
     };
   }
 
