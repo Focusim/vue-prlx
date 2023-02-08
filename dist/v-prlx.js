@@ -36,10 +36,18 @@
 
     if (settings.background) {
       settings.speed = value.speed || 0.02;
-      settings.limit = {
-        min: 0,
-        max: 80
-      };
+
+      if (value.limit) {
+        settings.limit = {
+          min: value.limit.min,
+          max: value.limit.max
+        };
+      } else {
+        settings.limit = {
+          min: 0,
+          max: 100
+        };
+      }
     }
 
     if (settings.reverse) {
